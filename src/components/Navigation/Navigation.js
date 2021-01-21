@@ -1,14 +1,14 @@
-<<<<<<< HEAD
+
 import React from 'react';
 import './Navigation.css';
 import 'tachyons'
 
 function Navigation({ onRouteChange, isSignedIn }) {
-	  	if (isSignedIn) {
+	  	if (isSignedIn === true) {
 	  		return (
 			    <div className="Navigation">
 			    	<nav>
-			    		<span id="sign-out" onClick={() => onRouteChange("signIn")}>Sign Out</span>
+			    		<span id="sign-out" onClick={() => onRouteChange("signOut")}>Sign Out</span>
 			    	</nav>
 			    </div>
 		    );
@@ -24,21 +24,4 @@ function Navigation({ onRouteChange, isSignedIn }) {
 			);
 		}
 }
-
-=======
-import React from 'react';
-import './Navigation.css';
-import 'tachyons'
-
-function Navigation() {
-  return (
-    <div className="Navigation">
-    	<nav>
-    		<span id="sign-out">Sign Out</span>
-    	</nav>
-    </div>
-  );
-}
-
->>>>>>> 76d330c52d2c4cc345fa08e5bccd7f0c06cdd2a0
 export default Navigation;

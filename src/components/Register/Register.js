@@ -18,7 +18,7 @@ function Register({ onRouteChange }) {
 		        <p><input type="password" id="password" placeholder="8 characters minimum" className="input" /></p>
 
 				<div id="button-5">
-			  		<input type="submit" onClick={() => onRouteChange('register')} value="Register" className="f6 grow no-underline br-pill ph3 pv2 mb2 dib white bg-orange"/>
+			  		<input type="submit" onClick={() => onRouteChange('home')} value="Register" className="f6 grow no-underline br-pill ph3 pv2 mb2 dib white bg-orange"/>
 				</div>
 		      </form>
 		    </div>
